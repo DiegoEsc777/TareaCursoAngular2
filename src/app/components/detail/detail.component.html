@@ -1,0 +1,9 @@
+<div class="card text-center" style="width: 18rem;">
+    <img class="card-img-top img-fluid" [src]="dataInput.img">
+    <div class="card-body">
+      <h5 class="card-title">{{dataInput.name}}</h5>
+      <button [routerLink]="['']">Home</button>
+      <button [routerLink]="['/harrypotterdetail', { var: dataInput.name}]">{{dataInput.name}}</button> 
+      <hr>
+    </div>
+  </div>
